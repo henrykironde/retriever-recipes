@@ -5,7 +5,7 @@ antarctic_breed_bird.json,1.2.2
 aquatic_animal_excretion.py,1.1.6
 biodiversity_response.json,1.0.2
 biomass_allometry_db.py,1.4.4
-biotime.json,1.1.0
+biotime.json,1.1.1
 bird_migration_data.json,1.0.2
 bird_size.json,1.2.3
 breast_cancer_wi.json,1.2.2
@@ -54,7 +54,7 @@ mapped_plant_quads_ks.json,1.2.1
 mapped_plant_quads_mt.json,1.2.1
 marine_recruitment_data.json,1.0.1
 mediter_basin_plant_traits.json,1.0.1
-mt_st_helens_veg.json,1.2.2
+mt_st_helens_veg.json,1.2.3
 nd_gain.json,1.0.3
 nematode_traits.json,1.0.1
 ngreatplains_flowering_dates.json,1.0.2
