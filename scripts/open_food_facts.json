@@ -1,0 +1,799 @@
+{
+    "archived": "fill or remove this field if not archived",
+    "citation": "FILL",
+    "description": "FILL",
+    "homepage": "https://world.openfoodfacts.org/data",
+    "keywords": [],
+    "licenses": [
+        {
+            "name": "FILL"
+        }
+    ],
+    "name": "open-food-facts",
+    "resources": [
+        {
+            "dialect": {
+                "delimiter": "\t",
+                "do_not_bulk_insert": "True"
+            },
+            "name": "products",
+            "path": "en.openfoodfacts.org.products.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "code",
+                        "type": "int"
+                    },
+                    {
+                        "name": "url",
+                        "size": "679",
+                        "type": "char"
+                    },
+                    {
+                        "name": "creator",
+                        "size": "66",
+                        "type": "char"
+                    },
+                    {
+                        "name": "created_t",
+                        "type": "int"
+                    },
+                    {
+                        "name": "created_datetime",
+                        "size": "20",
+                        "type": "char"
+                    },
+                    {
+                        "name": "last_modified_t",
+                        "type": "int"
+                    },
+                    {
+                        "name": "last_modified_datetime",
+                        "size": "20",
+                        "type": "char"
+                    },
+                    {
+                        "name": "product_name",
+                        "size": "257",
+                        "type": "char"
+                    },
+                    {
+                        "name": "generic_name",
+                        "size": "581",
+                        "type": "char"
+                    },
+                    {
+                        "name": "quantity",
+                        "size": "198",
+                        "type": "char"
+                    },
+                    {
+                        "name": "packaging",
+                        "size": "262",
+                        "type": "char"
+                    },
+                    {
+                        "name": "packaging_tags",
+                        "size": "252",
+                        "type": "char"
+                    },
+                    {
+                        "name": "brands",
+                        "size": "189",
+                        "type": "char"
+                    },
+                    {
+                        "name": "brands_tags",
+                        "size": "179",
+                        "type": "char"
+                    },
+                    {
+                        "name": "categories",
+                        "size": "786",
+                        "type": "char"
+                    },
+                    {
+                        "name": "categories_tags",
+                        "size": "771",
+                        "type": "char"
+                    },
+                    {
+                        "name": "categories_en",
+                        "size": "680",
+                        "type": "char"
+                    },
+                    {
+                        "name": "origins",
+                        "size": "643",
+                        "type": "char"
+                    },
+                    {
+                        "name": "origins_tags",
+                        "size": "608",
+                        "type": "char"
+                    },
+                    {
+                        "name": "manufacturing_places",
+                        "size": "566",
+                        "type": "char"
+                    },
+                    {
+                        "name": "manufacturing_places_tags",
+                        "size": "539",
+                        "type": "char"
+                    },
+                    {
+                        "name": "labels",
+                        "size": "1141",
+                        "type": "char"
+                    },
+                    {
+                        "name": "labels_tags",
+                        "size": "1148",
+                        "type": "char"
+                    },
+                    {
+                        "name": "labels_en",
+                        "size": "1145",
+                        "type": "char"
+                    },
+                    {
+                        "name": "emb_codes",
+                        "size": "326",
+                        "type": "char"
+                    },
+                    {
+                        "name": "emb_codes_tags",
+                        "size": "308",
+                        "type": "char"
+                    },
+                    {
+                        "name": "first_packaging_code_geo",
+                        "size": "19",
+                        "type": "char"
+                    },
+                    {
+                        "name": "cities",
+                        "type": "int"
+                    },
+                    {
+                        "name": "cities_tags",
+                        "size": "301",
+                        "type": "char"
+                    },
+                    {
+                        "name": "purchase_places",
+                        "size": "221",
+                        "type": "char"
+                    },
+                    {
+                        "name": "stores",
+                        "size": "289",
+                        "type": "char"
+                    },
+                    {
+                        "name": "countries",
+                        "size": "330",
+                        "type": "char"
+                    },
+                    {
+                        "name": "countries_tags",
+                        "size": "429",
+                        "type": "char"
+                    },
+                    {
+                        "name": "countries_en",
+                        "size": "318",
+                        "type": "char"
+                    },
+                    {
+                        "name": "ingredients_text",
+                        "size": "7536",
+                        "type": "char"
+                    },
+                    {
+                        "name": "allergens",
+                        "size": "1250",
+                        "type": "char"
+                    },
+                    {
+                        "name": "allergens_en",
+                        "type": "int"
+                    },
+                    {
+                        "name": "traces",
+                        "size": "582",
+                        "type": "char"
+                    },
+                    {
+                        "name": "traces_tags",
+                        "size": "473",
+                        "type": "char"
+                    },
+                    {
+                        "name": "traces_en",
+                        "size": "431",
+                        "type": "char"
+                    },
+                    {
+                        "name": "serving_size",
+                        "size": "190",
+                        "type": "char"
+                    },
+                    {
+                        "name": "serving_quantity",
+                        "type": "double"
+                    },
+                    {
+                        "name": "no_nutriments",
+                        "type": "int"
+                    },
+                    {
+                        "name": "additives_n",
+                        "type": "int"
+                    },
+                    {
+                        "name": "additives",
+                        "size": "11533",
+                        "type": "char"
+                    },
+                    {
+                        "name": "additives_tags",
+                        "size": "311",
+                        "type": "char"
+                    },
+                    {
+                        "name": "additives_en",
+                        "size": "1018",
+                        "type": "char"
+                    },
+                    {
+                        "name": "ingredients_from_palm_oil_n",
+                        "type": "int"
+                    },
+                    {
+                        "name": "ingredients_from_palm_oil",
+                        "type": "int"
+                    },
+                    {
+                        "name": "ingredients_from_palm_oil_tags",
+                        "size": "58",
+                        "type": "char"
+                    },
+                    {
+                        "name": "ingredients_that_may_be_from_palm_oil_n",
+                        "type": "int"
+                    },
+                    {
+                        "name": "ingredients_that_may_be_from_palm_oil",
+                        "type": "int"
+                    },
+                    {
+                        "name": "ingredients_that_may_be_from_palm_oil_tags",
+                        "size": "315",
+                        "type": "char"
+                    },
+                    {
+                        "name": "nutriscore_score",
+                        "type": "int"
+                    },
+                    {
+                        "name": "nutriscore_grade",
+                        "size": "1",
+                        "type": "char"
+                    },
+                    {
+                        "name": "nova_group",
+                        "type": "int"
+                    },
+                    {
+                        "name": "pnns_groups_1",
+                        "size": "23",
+                        "type": "char"
+                    },
+                    {
+                        "name": "pnns_groups_2",
+                        "size": "32",
+                        "type": "char"
+                    },
+                    {
+                        "name": "states",
+                        "size": "390",
+                        "type": "char"
+                    },
+                    {
+                        "name": "states_tags",
+                        "size": "378",
+                        "type": "char"
+                    },
+                    {
+                        "name": "states_en",
+                        "size": "339",
+                        "type": "char"
+                    },
+                    {
+                        "name": "main_category",
+                        "size": "212",
+                        "type": "char"
+                    },
+                    {
+                        "name": "main_category_en",
+                        "size": "212",
+                        "type": "char"
+                    },
+                    {
+                        "name": "image_url",
+                        "size": "119",
+                        "type": "char"
+                    },
+                    {
+                        "name": "image_small_url",
+                        "size": "119",
+                        "type": "char"
+                    },
+                    {
+                        "name": "image_ingredients_url",
+                        "size": "122",
+                        "type": "char"
+                    },
+                    {
+                        "name": "image_ingredients_small_url",
+                        "size": "122",
+                        "type": "char"
+                    },
+                    {
+                        "name": "image_nutrition_url",
+                        "size": "120",
+                        "type": "char"
+                    },
+                    {
+                        "name": "image_nutrition_small_url",
+                        "size": "120",
+                        "type": "char"
+                    },
+                    {
+                        "name": "energy_kj_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "energy_kcal_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "energy_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "energy_from_fat_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "fat_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "saturated_fat_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "butyric_acid_100g",
+                        "type": "int"
+                    },
+                    {
+                        "name": "caproic_acid_100g",
+                        "type": "int"
+                    },
+                    {
+                        "name": "caprylic_acid_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "capric_acid_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "lauric_acid_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "myristic_acid_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "palmitic_acid_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "stearic_acid_100g",
+                        "type": "int"
+                    },
+                    {
+                        "name": "arachidic_acid_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "behenic_acid_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "lignoceric_acid_100g",
+                        "type": "int"
+                    },
+                    {
+                        "name": "cerotic_acid_100g",
+                        "type": "int"
+                    },
+                    {
+                        "name": "montanic_acid_100g",
+                        "type": "int"
+                    },
+                    {
+                        "name": "melissic_acid_100g",
+                        "type": "int"
+                    },
+                    {
+                        "name": "monounsaturated_fat_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "polyunsaturated_fat_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "omega_3_fat_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "alpha_linolenic_acid_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "eicosapentaenoic_acid_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "docosahexaenoic_acid_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "omega_6_fat_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "linoleic_acid_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "arachidonic_acid_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "gamma_linolenic_acid_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "dihomo_gamma_linolenic_acid_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "omega_9_fat_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "oleic_acid_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "elaidic_acid_100g",
+                        "type": "int"
+                    },
+                    {
+                        "name": "gondoic_acid_100g",
+                        "type": "int"
+                    },
+                    {
+                        "name": "mead_acid_100g",
+                        "type": "int"
+                    },
+                    {
+                        "name": "erucic_acid_100g",
+                        "type": "int"
+                    },
+                    {
+                        "name": "nervonic_acid_100g",
+                        "type": "int"
+                    },
+                    {
+                        "name": "trans_fat_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "cholesterol_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "carbohydrates_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "sugars_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "sucrose_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "glucose_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "fructose_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "lactose_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "maltose_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "maltodextrins_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "starch_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "polyols_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "fiber_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "proteins_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "casein_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "serum_proteins_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "nucleotides_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "salt_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "sodium_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "alcohol_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "vitamin_a_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "beta_carotene_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "vitamin_d_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "vitamin_e_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "vitamin_k_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "vitamin_c_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "vitamin_b1_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "vitamin_b2_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "vitamin_pp_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "vitamin_b6_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "vitamin_b9_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "folates_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "vitamin_b12_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "biotin_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "pantothenic_acid_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "silica_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "bicarbonate_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "potassium_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "chloride_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "calcium_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "phosphorus_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "iron_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "magnesium_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "zinc_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "copper_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "manganese_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "fluoride_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "selenium_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "chromium_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "molybdenum_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "iodine_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "caffeine_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "taurine_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "ph_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "fruits_vegetables_nuts_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "fruits_vegetables_nuts_dried_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "fruits_vegetables_nuts_estimate_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "collagen_meat_protein_ratio_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "cocoa_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "chlorophyl_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "carbon_footprint_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "carbon_footprint_from_meat_or_fish_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "nutrition_score_fr_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "nutrition_score_uk_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "glycemic_index_100g",
+                        "type": "int"
+                    },
+                    {
+                        "name": "water_hardness_100g",
+                        "type": "int"
+                    },
+                    {
+                        "name": "choline_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "phylloquinone_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "beta_glucan_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "inositol_100g",
+                        "type": "double"
+                    },
+                    {
+                        "name": "carnitine_100g",
+                        "type": "double"
+                    }
+                ]
+            },
+            "url": "FILL"
+        }
+    ],
+    "retriever": "True",
+    "retriever_minimum_version": "2.1.0",
+    "title": "FILL",
+    "version": "1.0.0"
+}
